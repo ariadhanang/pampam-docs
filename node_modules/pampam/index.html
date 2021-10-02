@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QJS Demo</title>
+</head>
+
+<body>
+
+	<div id="root"></div>
+
+	<script src="/q.js"></script>
+	<script>
+		var routes = [
+			{ path: "/", templateUrl: "/demo/templates/home.html" },
+			{
+				path: "/docs", templateUrl: "/demo/templates/docs.html", children: [
+					{ path: "/getting-started", templateUrl: "/demo/templates/docs/getting-started.html" },
+				]
+			}
+		];
+		var module = new Q("cendikia", routes);
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+
+hr {
+	background-color: #555;
+}
+
+.container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.btn {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar-brand {
+	font-weight: 600;
+}
+
+.pampam {
+	font-weight: 600;
+}
+
+p.lead {
+	font-size: 1.6em;
+	font-weight: 600;
+	line-height: 1.2;
+	opacity: 0.5;
+}
+
+p.desc {
+	font-size: 1.1em;
+}
+
+.page {
+	padding: 120px 0;
+}

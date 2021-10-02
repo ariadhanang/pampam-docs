@@ -1,0 +1,26 @@
+{
+  "name": "pampam-docs",
+  "version": "0.0.1",
+  "description": "Documentation for Pampam framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server -p 8888 -c-1 -P http://localhost:8888?"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariadhanang/pampam-docs.git"
+  },
+  "author": "ariadhanang@gmail.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ariadhanang/pampam-docs/issues"
+  },
+  "homepage": "https://github.com/ariadhanang/pampam-docs#readme",
+  "dependencies": {
+    "pampam": "^0.0.2"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.2"
+  }
+}
