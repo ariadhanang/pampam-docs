@@ -12,6 +12,24 @@ hr {
 	background-color: #555;
 }
 
+img {
+	max-width: 100%;
+}
+
+ol li {
+	margin-bottom: 10px;
+}
+
+pre{
+	display: block;
+	margin: 10px 0;
+	padding: 8px;
+	background: #eee;
+	color: #111;
+	border-radius: 8px;
+	font-size: 0.9em;
+}
+
 .container {
 	padding-left: 50px;
 	padding-right: 50px;

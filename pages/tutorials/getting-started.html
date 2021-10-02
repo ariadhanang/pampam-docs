@@ -1,0 +1,71 @@
+<div>
+
+	<h2>Getting Started</h2>
+	<p>
+		Creating a web application using <span class="pampam">PampamJS</span> is easy, it only takes one minute to setup.
+	</p>
+	<p>
+		<a href="https://pampam.netlify.app/pampam-latest.js" class="btn btn-light">Download pampam.js</a>
+		<a href="/assets/pampam-sample.zip" class="btn btn-light">Download sample project (.zip)</a>
+	</p>
+
+	<hr>
+	<br>
+
+	<section>
+		<h3>Quick Setup</h3>
+		<div>
+			<p>Let's assume we have our project folder structured like on the image.</p>
+			<ol>
+				<li>
+					Add the downloaded <code>pampam.js</code> (or, use CDN) to <code>index.html</code> script tag.
+					<div class="codeblock">
+<pre>
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://pampam.netlify.app/pampam-latest.js&quot;&gt;&lt;/script&gt;
+</pre>
+					</div>
+				</li>
+				<li>
+					Add <code>&lt;div&gt;</code> tag with id <code>&quot;root&quot;</code> inside the <code>&lt;body&gt;</code> to mark where our contents will be placed.
+<pre>
+&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+</pre>
+				</li>
+				<li>
+					Define your app in <code>script.js</code> file.
+<pre>
+var app = new Pampam("myapp", [
+	{ path: "/", templateUrl: "/pages/home.html" },
+	{ path: "/about", templateUrl: "/pages/about.html" },
+]);
+</pre>
+				</li>
+				<li>We're done. The final codes will look like this:</li>
+			</ol>
+		</div>
+	</section>
+
+	<br>
+
+	<section>
+		<h3>Running on Web Server</h3>
+		<p>Our app requires a web server to run locally. The simplest way is using <code>http-server</code> package from NPM. If you have NodeJS and NPM installed, run this command inside the project folder:</p>
+<pre>
+$ npx http-server -p 8888 -c-1 -P http://localhost:8888?
+</pre>
+		<p>Change <code>8888</code> to your desired port (optional).</p>
+		<p>To run on production server like Apache or Nginx, please read <a href="#">Deployment</a> page.</p>
+	</section>
+
+	<br>
+	<hr>
+
+	<div class="d-flex flex-row-reverse">
+		<div>
+			<a href="/tutorials/routing" class="btn btn-primary">Next: Pages &amp; Routing &nbsp; &rarr;</a>
+		</div>
+	</div>
+
+
+
+</div>
