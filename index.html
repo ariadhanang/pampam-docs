@@ -20,8 +20,15 @@
 						<li class="nav-item">
 							<a class="nav-link" href="/">Home</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/getting-started">Getting Started</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="tutorialsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Tutorials
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="tutorialsDropdown">
+								<li><a class="dropdown-item" href="/tutorials/getting-started">Getting Started</a></li>
+								<li><a class="dropdown-item" href="/tutorials/routing">Pages &amp; Routing</a></li>
+								<li><a class="dropdown-item" href="/tutorials/advanced-routing">Advanced Routing</a></li>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/docs">Documentation</a>
@@ -40,9 +47,9 @@
 		<div id="root"></div>
 
 		<script type="text/javascript" src="https://pampam.netlify.app/pampam-latest.js"></script>
-		<script type="text/javascript" src="/index.js">
+		<script type="text/javascript" src="/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-		</script>
 
 	</body>
 </html>
